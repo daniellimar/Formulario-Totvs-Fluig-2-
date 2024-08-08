@@ -10,6 +10,28 @@
    </array>
   </void>
   <void method="put">
+   <string>SINAL</string>
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.Signal">
+      <void property="description">
+       <string>VendaAutomovel</string>
+      </void>
+      <void property="signalPK">
+       <object class="com.totvs.tds.ecm.foundation.ws.SignalPK">
+        <void property="companyId">
+         <long>1</long>
+        </void>
+        <void property="signalId">
+         <int>1</int>
+        </void>
+       </object>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void method="put">
    <string>mecanismoGrupo</string>
    <object class="java.util.ArrayList">
     <void method="add">
@@ -300,10 +322,23 @@
        <int>1</int>
       </void>
       <void property="processDescription">
-       <string>Proposta de Seguro</string>
+       <string>Fechamento de Vendas</string>
       </void>
       <void property="processId">
        <string>PropostadeSeguro - Teste - EuMesmo</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
+       <string>Proposta de Seguro</string>
+      </void>
+      <void property="processId">
+       <string>PropostadeSeguroDaniel</string>
       </void>
      </object>
     </void>
@@ -369,6 +404,19 @@
       </void>
       <void property="processId">
        <string>VendadeAutomóvel - Teste - EuMesmo</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
+       <string>Venda de Automóvel - Daniel</string>
+      </void>
+      <void property="processId">
+       <string>VendadeAutomóvel-Daniel</string>
       </void>
      </object>
     </void>

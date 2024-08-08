@@ -28,7 +28,7 @@
     <processDefinitionVersionPK>
       <companyId>1</companyId>
       <processId>Novo Ponto Comercial</processId>
-      <version>7</version>
+      <version>8</version>
     </processDefinitionVersionPK>
     <versionDescription></versionDescription>
     <formId>112</formId>
@@ -205,6 +205,56 @@
         <companyId>1</companyId>
         <processId>NovoPontoComercial</processId>
         <version>1</version>
+        <sequence>13</sequence>
+      </processStatePK>
+      <stateName>Cadastro de Novo Ponto Comercial</stateName>
+      <stateDescription>Cadastro de Novo Ponto Comercial</stateDescription>
+      <instruction></instruction>
+      <deadlineTime>0</deadlineTime>
+      <joint>false</joint>
+      <agreementPercentage>0</agreementPercentage>
+      <engineAllocationId></engineAllocationId>
+      <engineAllocationConfiguration></engineAllocationConfiguration>
+      <initialState>false</initialState>
+      <notifyAuthorityDelay>false</notifyAuthorityDelay>
+      <notifyRequisitionerDelay>false</notifyRequisitionerDelay>
+      <allowanceAuthorityTime>0</allowanceAuthorityTime>
+      <frequenceAuthorityTime>0</frequenceAuthorityTime>
+      <allowanceRequisitionerTime>0</allowanceRequisitionerTime>
+      <frequenceRequisitionerTime>0</frequenceRequisitionerTime>
+      <transferAttachments>false</transferAttachments>
+      <subProcessId>CadastrodeNovoPontoComercialDaniel</subProcessId>
+      <formFolder>0</formFolder>
+      <notifyAuthorityFollowUp>false</notifyAuthorityFollowUp>
+      <notifyRequisitionerFollowUp>false</notifyRequisitionerFollowUp>
+      <automatic>false</automatic>
+      <positionX>700</positionX>
+      <positionY>460</positionY>
+      <forecastedEffortType>0</forecastedEffortType>
+      <forecastedEffort>0</forecastedEffort>
+      <notifyManagerFollowUp>false</notifyManagerFollowUp>
+      <notifyManagerDelay>true</notifyManagerDelay>
+      <allowanceManagerTime>0</allowanceManagerTime>
+      <frequenceManagerTime>0</frequenceManagerTime>
+      <inhibitTransfer>false</inhibitTransfer>
+      <stateType>2</stateType>
+      <bpmnType>100</bpmnType>
+      <signalId>0</signalId>
+      <counterSign>false</counterSign>
+      <openInstances>0</openInstances>
+      <noticeExpirationAuthorityTime>0</noticeExpirationAuthorityTime>
+      <noticeExpirationRequisitionerTime>0</noticeExpirationRequisitionerTime>
+      <noticeExpirationManagerTime>0</noticeExpirationManagerTime>
+      <cancelSubProcess>false</cancelSubProcess>
+      <destinationStates/>
+      <digitalSignature>false</digitalSignature>
+      <sendToNextTaskInSubProcess>true</sendToNextTaskInSubProcess>
+    </ProcessState>
+    <ProcessState>
+      <processStatePK>
+        <companyId>1</companyId>
+        <processId>NovoPontoComercial</processId>
+        <version>1</version>
         <sequence>7</sequence>
       </processStatePK>
       <stateName>Fim da Solicitação</stateName>
@@ -289,7 +339,41 @@
         <companyId>1</companyId>
         <processId>NovoPontoComercial</processId>
         <version>1</version>
-        <linkSequence>8</linkSequence>
+        <linkSequence>12</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>2</initialStateSequence>
+      <finalStateSequence>7</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>NovoPontoComercial</processId>
+        <version>1</version>
+        <linkSequence>14</linkSequence>
+      </processLinkPK>
+      <actionLabel></actionLabel>
+      <returnPermited>false</returnPermited>
+      <initialStateSequence>4</initialStateSequence>
+      <finalStateSequence>13</finalStateSequence>
+      <returnLabel></returnLabel>
+      <name></name>
+      <automaticLink>false</automaticLink>
+      <defaultLink>false</defaultLink>
+      <type>0</type>
+    </ProcessLink>
+    <ProcessLink>
+      <processLinkPK>
+        <companyId>1</companyId>
+        <processId>NovoPontoComercial</processId>
+        <version>1</version>
+        <linkSequence>16</linkSequence>
       </processLinkPK>
       <actionLabel></actionLabel>
       <returnPermited>false</returnPermited>
@@ -306,11 +390,11 @@
         <companyId>1</companyId>
         <processId>NovoPontoComercial</processId>
         <version>1</version>
-        <linkSequence>12</linkSequence>
+        <linkSequence>17</linkSequence>
       </processLinkPK>
       <actionLabel></actionLabel>
       <returnPermited>false</returnPermited>
-      <initialStateSequence>2</initialStateSequence>
+      <initialStateSequence>13</initialStateSequence>
       <finalStateSequence>7</finalStateSequence>
       <returnLabel></returnLabel>
       <name></name>
@@ -371,6 +455,22 @@
         <sequence>3</sequence>
       </swimLanePK>
     </SwimLane>
+    <SwimLane>
+      <color>d0daae</color>
+      <height>140</height>
+      <width>880</width>
+      <positionX>80</positionX>
+      <positionY>420</positionY>
+      <stateName>Sistemas</stateName>
+      <type>2</type>
+      <parentSequence>0</parentSequence>
+      <swimLanePK>
+        <companyId>1</companyId>
+        <processId>NovoPontoComercial</processId>
+        <version>1</version>
+        <sequence>4</sequence>
+      </swimLanePK>
+    </SwimLane>
   </list>
   <list/>
   <list/>
@@ -379,7 +479,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>NovoPontoComercial</processId>
-        <version>7</version>
+        <version>8</version>
         <linkSequence>3</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -390,7 +490,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>NovoPontoComercial</processId>
-        <version>7</version>
+        <version>8</version>
         <linkSequence>5</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -401,12 +501,34 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>NovoPontoComercial</processId>
-        <version>7</version>
+        <version>8</version>
         <linkSequence>12</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
       <positionX>897</positionX>
       <positionY>232</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>NovoPontoComercial</processId>
+        <version>8</version>
+        <linkSequence>14</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>552</positionX>
+      <positionY>502</positionY>
+    </ProcessLinkBend>
+    <ProcessLinkBend>
+      <processLinkBendPK>
+        <companyId>1</companyId>
+        <processId>NovoPontoComercial</processId>
+        <version>8</version>
+        <linkSequence>17</linkSequence>
+        <bendSequence>1</bendSequence>
+      </processLinkBendPK>
+      <positionX>897</positionX>
+      <positionY>500</positionY>
     </ProcessLinkBend>
   </list>
   <list/>

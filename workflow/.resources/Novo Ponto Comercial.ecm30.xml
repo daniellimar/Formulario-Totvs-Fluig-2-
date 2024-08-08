@@ -28,7 +28,7 @@
     <processDefinitionVersionPK>
       <companyId>1</companyId>
       <processId>Novo Ponto Comercial</processId>
-      <version>8</version>
+      <version>12</version>
     </processDefinitionVersionPK>
     <versionDescription></versionDescription>
     <formId>112</formId>
@@ -404,7 +404,32 @@
     </ProcessLink>
   </list>
   <list/>
-  <list/>
+  <list>
+    <WorkflowProcessEvent>
+      <workflowProcessEventPK>
+        <companyId>1</companyId>
+        <eventId>beforeTaskSave</eventId>
+        <processId>NovoPontoComercial</processId>
+        <version>1</version>
+      </workflowProcessEventPK>
+      <eventDescription>function beforeTaskSave(colleagueId, nextSequenceId, userList) {&#xd;
+    var anexos = hAPI.listAttachments();&#xd;
+    var temAnexos = false;&#xd;
+&#xd;
+    for (var i = 0; i &lt; anexos.size(); i++) {&#xd;
+        var anexoAtual = anexos.get(i);&#xd;
+&#xd;
+        if (anexoAtual.getDocumentDescription() == &apos;Proposta Comercial.pdf&apos;) {&#xd;
+            temAnexos = true;&#xd;
+        }&#xd;
+    }&#xd;
+&#xd;
+    if (!temAnexos) {&#xd;
+        throw &quot;Proposta comercial não foi anexada&quot;;&#xd;
+    }&#xd;
+}</eventDescription>
+    </WorkflowProcessEvent>
+  </list>
   <list/>
   <list>
     <SwimLane>
@@ -479,7 +504,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>NovoPontoComercial</processId>
-        <version>8</version>
+        <version>12</version>
         <linkSequence>3</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -490,7 +515,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>NovoPontoComercial</processId>
-        <version>8</version>
+        <version>12</version>
         <linkSequence>5</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -501,7 +526,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>NovoPontoComercial</processId>
-        <version>8</version>
+        <version>12</version>
         <linkSequence>12</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -512,7 +537,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>NovoPontoComercial</processId>
-        <version>8</version>
+        <version>12</version>
         <linkSequence>14</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -523,7 +548,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>NovoPontoComercial</processId>
-        <version>8</version>
+        <version>12</version>
         <linkSequence>17</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>

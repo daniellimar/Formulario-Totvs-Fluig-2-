@@ -43,12 +43,16 @@
 <script type="text/javascript" src="components/RequisitanteInputs.js"></script>
 <script type="text/javascript" src="components/PontoComercialInputs.js"></script>
 
+<script type="text/javascript" src="components/inputs/text.js"></script>
+
 <script>
     $(document).ready(function () {
         // Renderizar os componentes
-        $('#dataset-container').html(renderDatasetInputs());
-        $('#requisitante-container').html(renderRequisitanteInputs());
-        $('#ponto-comercial-container').html(renderPontoComercialInputs());
+        // $('#dataset-container').html(renderDatasetInputs());
+        // $('#requisitante-container').html(renderRequisitanteInputs());
+        // $('#ponto-comercial-container').html(renderPontoComercialInputs());
+
+        $('#dataset-container').html(inputText());
 
         // Inicializa máscaras (opcional)
         $('#telefone').mask('(00) 0000-0000');

@@ -1,5 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
     <link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css"/>
     <script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
     <script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
@@ -11,310 +15,45 @@
 <body>
 <div class="fluig-style-guide">
     <form name="form" role="form">
-
         <div class="panel panel-primary mb-4">
             <div class="panel-heading"><h4>Consumindo Datasets</h4></div>
-            <div class="panel-body">
-                <div class="row mb-3">
-                    <div class="col-md-2">
-                        <div class="custom-radio custom-radio-primary">
-                            <label for="moeda">Moeda <small>(dsFormMoedas2)</small></label>
-                            <select name="moeda" id="moeda" class="form-control" dataset="dsFormMoedas2"
-                                    datasetKey="moeda"
-                                    datasetValue="simbolo">
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="col-md-2">
-                        <label for="valor">Valor</label>
-                        <input type="number" name="valor" id="valor" class="form-control">
-                    </div>
-                </div>
-
-                <div class="row mb-3 bg-lif">
-                    <div class="col-md-4">
-                        <div class="custom-radio custom-radio-primary">
-                            <label for="moeda">Responsáveis <small>(dsResponsaveis_daniel)</small></label>
-                            <select name="dsResponsaveis_daniel" id="dsResponsaveis_daniel" class="form-control"
-                                    dataset="dsResponsaveis_daniel" datasetKey="login"
-                                    datasetValue="nome">
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="custom-radio custom-radio-primary">
-                            <label for="moeda">Usuários <small>(colleague)</small></label>
-                            <select name="colleague" id="colleague" class="form-control"
-                                    dataset="colleague" datasetKey="login"
-                                    datasetValue="colleagueName">
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="custom-radio custom-radio-primary">
-                            <label for="moeda">Grupos <small>(colleagueGroup)</small></label>
-                            <select name="colleagueGroup" id="colleagueGroup" class="form-control"
-                                    dataset="colleagueGroup" datasetKey="colleagueId"
-                                    datasetValue="groupId">
-                            </select>
-                        </div>
-                    </div>
-                </div>
-
-                <br>
-
-                <div class="row mb-3">
-                </div>
+            <div class="panel-body" id="dataset-container">
+                <!-- Inputs serão gerados aqui -->
             </div>
         </div>
 
         <div class="panel panel-primary mb-4">
             <div class="panel-heading"><h4>Dados do Requisitante</h4></div>
-            <div class="panel-body">
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="nome">Nome</label>
-                        <input type="text" id="nome" name="nome" class="form-control">
-                    </div>
-                    <div class="col-md-4">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" class="form-control">
-                    </div>
-                    <div class="col-md-2">
-                        <label for="telefone">Telefone</label>
-                        <input type="text" id="telefone" name="telefone" class="form-control">
-                    </div>
-                </div>
-                <div class="row mb-3">
-                    <div class="col-md-2">
-                        <label for="documentoIdentidade">CPF</label>
-                        <input type="text" id="documentoIdentidade" name="documentoIdentidade" class="form-control"
-                        >
-                    </div>
-                    <div class="col-md-2">
-                        <label for="dataNascimento">Data de Nascimento</label>
-                        <input type="text" id="dataNascimento" name="dataNascimento" class="form-control"/>
-                    </div>
-                </div>
+            <div class="panel-body" id="requisitante-container">
+                <!-- Inputs serão gerados aqui -->
             </div>
         </div>
 
         <div class="panel panel-primary mb-4">
             <div class="panel-heading"><h4>Ponto Comercial</h4></div>
-            <div class="panel-body">
-                <div class="row mb-3">
-                    <div class="col-md-12">
-                        <h6>Tipo de Loja</h6>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="custom-radio custom-radio-primary">
-                            <input type="radio" name="tipoPonto" id="radio1" value="quiosque">
-                            <label for="radio1">Quiosque</label>
-                        </div>
-                    </div>
-                    <div class="col-md-2">
-                        <div class="custom-radio custom-radio-primary">
-                            <input type="radio" name="tipoPonto" id="radio2" value="loja">
-                            <label for="radio2">Loja</label>
-                        </div>
-                    </div>
-                </div>
-
-                <hr>
-
-                <h4>Endereço</h4>
-
-                <div class="row mb-3">
-                    <div class="col-md-2">
-                        <label for="cep">CEP</label>
-                        <input type="text" id="cep" name="cep" class="form-control">
-                    </div>
-                    <div class="col-md-4">
-                        <label for="logradouro">Logradouro</label>
-                        <input type="text" id="logradouro" name="logradouro" class="form-control">
-                    </div>
-                    <div class="col-md-2">
-                        <label for="numero">Número</label>
-                        <input type="text" id="numero" name="numero" class="form-control">
-                    </div>
-                    <div class="col-md-4">
-                        <label for="bairro">Bairro</label>
-                        <input type="text" id="bairro" name="bairro" class="form-control">
-                    </div>
-                </div>
-                <div class="row mb-3">
-                    <div class="col-md-6">
-                        <label for="cidade">Cidade</label>
-                        <input type="text" id="cidade" name="cidade" class="form-control">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="estado">Estado</label>
-                        <input type="text" id="estado" name="estado" class="form-control">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="card">
-                    <div class="card-thumb card-thumb-img">
-                        <div class="card-list-items">
-                    <span class="card-list-item card-list-item-icons" title="Icon title">
-                        <i class="flaticon flaticon-lock icon-sm" aria-hidden="true"></i>
-                    </span>
-                            <span class="card-list-item card-list-item-icons" title="Icon title">
-                        <i class="flaticon flaticon-trash icon-sm" aria-hidden="true"></i>
-                    </span>
-                            <span class="card-list-item card-list-item-icons" title="Icon title">
-                        <i class="flaticon flaticon-star icon-sm" aria-hidden="true"></i>
-                    </span>
-                            <span class="card-list-item card-list-item-icons bg-warning" title="Icon title">
-                        <i class="flaticon flaticon-cloud-download icon-sm" aria-hidden="true"></i>
-                    </span>
-                        </div>
-                        <div class="card-thumb-actions">
-                            <button type="button" class="btn btn-primary">
-                                Visualizar página
-                            </button>
-                            <button type="button" class="btn btn-default">
-                                Editar página
-                            </button>
-                        </div>
-                        <img
-                                src="/style-guide/images/bg-card-default.png"
-                                alt="Card image cap"
-                        >
-                    </div>
-                    <div class="card-body">
-                        <div class="card-title-with-actions">
-                            <h1 class="card-normal-title">
-                                Lorem ipsum dolor sit amet consectetur adipiscing elit
-                            </h1>
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-link btn-sm dropdown-toggle"
-                                        data-toggle="dropdown">
-                                    <i class="flaticon flaticon-more-vert icon-md" aria-hidden="true"></i>
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-right" role="menu">
-                                    <li><a href="#">Visualizar página</a></li>
-                                    <li><a href="#">Editar página</a></li>
-                                    <li><a href="#">Excluir página</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <p class="card-small-text">Criado por José da Silva dos Santos das Neves</p>
-                        <p class="card-small-text">Editado em 20/02/2021 - V 1.0</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-3 col-md-4 col-sm-6">
-                <div class="card">
-                    <div
-                            class="card-thumb card-thumb-illustration"
-                    >
-                        <div class="card-list-items">
-                    <span class="card-list-item card-list-item-icons" title="Icon title">
-                        <i class="flaticon flaticon-lock icon-sm" aria-hidden="true"></i>
-                    </span>
-                            <span class="card-list-item card-list-item-icons" title="Icon title">
-                        <i class="flaticon flaticon-trash icon-sm" aria-hidden="true"></i>
-                    </span>
-                            <span class="card-list-item card-list-item-icons" title="Icon title">
-                        <i class="flaticon flaticon-star icon-sm" aria-hidden="true"></i>
-                    </span>
-                            <span class="card-list-item card-list-item-icons bg-warning" title="Icon title">
-                        <i class="flaticon flaticon-cloud-download icon-sm" aria-hidden="true"></i>
-                    </span>
-                        </div>
-                        <div class="card-thumb-actions">
-                            <button type="button" class="btn btn-primary">
-                                Visualizar página
-                            </button>
-                            <button type="button" class="btn btn-default">
-                                Editar página
-                            </button>
-                        </div>
-                        <i
-                                class="illustration illustration-layout-group illustration-md"
-                                aria-hidden="true"
-                        ></i>
-                    </div>
-                    <div class="card-body">
-                        <div class="card-title-with-actions">
-                            <h1 class="card-normal-title">
-                                Lorem ipsum dolor sit amet consectetur adipiscing elit
-                            </h1>
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-link btn-sm dropdown-toggle"
-                                        data-toggle="dropdown">
-                                    <i class="flaticon flaticon-more-vert icon-md" aria-hidden="true"></i>
-                                </button>
-                                <ul class="dropdown-menu dropdown-menu-right" role="menu">
-                                    <li><a href="#">Visualizar página</a></li>
-                                    <li><a href="#">Editar página</a></li>
-                                    <li><a href="#">Excluir página</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <p class="card-small-text">Criado por José da Silva</p>
-                        <p class="card-small-text">Editado em 20/02/2021 - V 1.0</p>
-                    </div>
-                </div>
+            <div class="panel-body" id="ponto-comercial-container">
+                <!-- Inputs serão gerados aqui -->
             </div>
         </div>
     </form>
 </div>
 
-<script src="cep.js"></script>
-<script>
-    FLUIGC.calendar('#dataNascimento');
+<!-- Importar os componentes -->
+<script type="text/javascript" src="components/DatasetInputs.js"></script>
+<script type="text/javascript" src="components/RequisitanteInputs.js"></script>
+<script type="text/javascript" src="components/PontoComercialInputs.js"></script>
 
+<script>
     $(document).ready(function () {
-        $('#telefone').mask('(00) 00000-0000');
+        // Renderizar os componentes
+        $('#dataset-container').html(renderDatasetInputs());
+        $('#requisitante-container').html(renderRequisitanteInputs());
+        $('#ponto-comercial-container').html(renderPontoComercialInputs());
+
+        // Inicializa máscaras (opcional)
+        $('#telefone').mask('(00) 0000-0000');
         $('#cep').mask('00000-000');
-        $('#dataNascimento').mask('00/00/0000');
-        $('#documentoIdentidade').mask('000.000.000-00');
     });
 </script>
-
-<style>
-    form {
-        max-width: 80vw;
-        margin: 0 auto;
-    }
-
-    input {
-        margin-bottom: 1em !important;
-    }
-
-    .panel {
-        padding: 15px;
-        background-color: #f7f7f7;
-        border-radius: 5px;
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .panel-heading {
-        padding: 10px 15px;
-        font-size: 1.2em;
-        font-weight: bold;
-    }
-
-    #diasSemana .custom-checkbox {
-        margin-bottom: 10px;
-    }
-
-    .btn-primary {
-        background-color: #007bff;
-        border-color: #007bff;
-        padding: 10px 20px;
-        font-size: 1.1em;
-    }
-</style>
 </body>
 </html>

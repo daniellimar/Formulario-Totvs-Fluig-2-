@@ -44,19 +44,22 @@
 <script type="text/javascript" src="components/PontoComercialInputs.js"></script>
 
 <script type="text/javascript" src="components/inputs/text.js"></script>
+<script type="text/javascript" src="components/inputs/CPF.js"></script>
+<script type="text/javascript" src="components/inputs/CEP.js"></script>
 
 <script>
     $(document).ready(function () {
         // Renderizar os componentes
         // $('#dataset-container').html(renderDatasetInputs());
         // $('#requisitante-container').html(renderRequisitanteInputs());
-        // $('#ponto-comercial-container').html(renderPontoComercialInputs());
+        $('#ponto-comercial-container').html(renderPontoComercialInputs());
 
-        $('#dataset-container').html(inputText());
+        // $('#dataset-container').html(inputText());
+        // $('#dataset-container').html(inputCPF());
+        $('#dataset-container').html(inputCEP());
 
         // Inicializa máscaras (opcional)
         $('#telefone').mask('(00) 0000-0000');
-        $('#cep').mask('00000-000');
     });
 </script>
 </body>

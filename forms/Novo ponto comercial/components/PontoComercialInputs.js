@@ -11,7 +11,7 @@ function renderPontoComercialInputs() {
             </div>
             <div class="col-md-2">
                 <label for="cep">CEP</label>
-                <input type="text" id="cep" name="cep" class="form-control">
+<!--                <input type="text" id="cep" name="cep" class="form-control">-->
             </div>
         </div>
         <div class="row mb-3">

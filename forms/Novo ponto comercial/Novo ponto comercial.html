@@ -56,7 +56,9 @@
 
         // $('#dataset-container').html(inputText());
         // $('#dataset-container').html(inputCPF());
-        $('#dataset-container').html(inputCEP());
+        $('#dataset-container').html(inputCEP({
+            'divPai': 'ponto-comercial-container',
+        }));
 
         // Inicializa máscaras (opcional)
         $('#telefone').mask('(00) 0000-0000');

@@ -28,7 +28,7 @@
     <processDefinitionVersionPK>
       <companyId>1</companyId>
       <processId>Novo Ponto Comercial</processId>
-      <version>12</version>
+      <version>1</version>
     </processDefinitionVersionPK>
     <versionDescription></versionDescription>
     <formId>112</formId>
@@ -504,7 +504,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>NovoPontoComercial</processId>
-        <version>12</version>
+        <version>1</version>
         <linkSequence>3</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -515,7 +515,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>NovoPontoComercial</processId>
-        <version>12</version>
+        <version>1</version>
         <linkSequence>5</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -526,7 +526,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>NovoPontoComercial</processId>
-        <version>12</version>
+        <version>1</version>
         <linkSequence>12</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -537,7 +537,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>NovoPontoComercial</processId>
-        <version>12</version>
+        <version>1</version>
         <linkSequence>14</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>
@@ -548,7 +548,7 @@
       <processLinkBendPK>
         <companyId>1</companyId>
         <processId>NovoPontoComercial</processId>
-        <version>12</version>
+        <version>1</version>
         <linkSequence>17</linkSequence>
         <bendSequence>1</bendSequence>
       </processLinkBendPK>

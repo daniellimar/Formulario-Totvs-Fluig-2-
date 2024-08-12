@@ -1,9 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
     <link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css"/>
     <script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
     <script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
@@ -15,54 +11,48 @@
 <body>
 <div class="fluig-style-guide">
     <form name="form" role="form">
-        <div class="panel panel-primary mb-4">
-            <div class="panel-heading"><h4>Consumindo Datasets</h4></div>
-            <div class="panel-body" id="dataset-container">
-                <!-- Inputs serão gerados aqui -->
-            </div>
-        </div>
-
-        <div class="panel panel-primary mb-4">
-            <div class="panel-heading"><h4>Dados do Requisitante</h4></div>
-            <div class="panel-body" id="requisitante-container">
-                <!-- Inputs serão gerados aqui -->
-            </div>
-        </div>
-
-        <div class="panel panel-primary mb-4">
-            <div class="panel-heading"><h4>Ponto Comercial</h4></div>
-            <div class="panel-body" id="ponto-comercial-container">
-                <!-- Inputs serão gerados aqui -->
-            </div>
-        </div>
+        <input type="hidden" name="nome"> id="id">
+        <div id="form-content"></div>
     </form>
 </div>
 
-<!-- Importar os componentes -->
-<script type="text/javascript" src="components/DatasetInputs.js"></script>
-<script type="text/javascript" src="components/RequisitanteInputs.js"></script>
-<script type="text/javascript" src="components/PontoComercialInputs.js"></script>
-
-<script type="text/javascript" src="components/inputs/text.js"></script>
-<script type="text/javascript" src="components/inputs/CPF.js"></script>
-<script type="text/javascript" src="components/inputs/CEP.js"></script>
-
-<script>
+<script type="application/javascript">
     $(document).ready(function () {
-        // Renderizar os componentes
-        // $('#dataset-container').html(renderDatasetInputs());
-        // $('#requisitante-container').html(renderRequisitanteInputs());
-        $('#ponto-comercial-container').html(renderPontoComercialInputs());
+        const formContent = $('#form-content');
 
-        // $('#dataset-container').html(inputText());
-        // $('#dataset-container').html(inputCPF());
-        $('#dataset-container').html(inputCEP({
-            'divPai': 'ponto-comercial-container',
-        }));
+        formContent.append(`
+            <div class="panel panel-primary mb-4">
+                <div class="panel-heading"><h4>Consumindo Datasets</h4></div>
+                <div class="panel-body">
+                    <div class="col-md-2">
+                        <label for="valor">Valor</label>
+                        <input type="number" name="valor" id="valor" class="form-control">
+                    </div>
+                </div>
+            </div>
+        `);
 
-        // Inicializa máscaras (opcional)
-        $('#telefone').mask('(00) 0000-0000');
+        $('#valor').on('blur', function () {
+            if ($(this).val() !== '') {
+                addChild();
+            }
+        });
     });
+
+    function addChild() {
+        var row = wdkAddChild('pontosComerciaisFilhos');
+    }
 </script>
+
+<style>
+    form {
+        max-width: 80vw;
+        margin: 0 auto;
+    }
+
+    input {
+        margin-bottom: 1em !important;
+    }
+</style>
 </body>
 </html>

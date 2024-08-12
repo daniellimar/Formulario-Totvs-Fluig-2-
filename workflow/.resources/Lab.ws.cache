@@ -140,6 +140,32 @@
        <int>1</int>
       </void>
       <void property="processDescription">
+       <string>Solicitação de Manutenção</string>
+      </void>
+      <void property="processId">
+       <string>100</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
+       <string>Processo Novo Local de Descanso</string>
+      </void>
+      <void property="processId">
+       <string>355</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
        <string>Cadastro de Novo Ponto Comercial Daniel</string>
       </void>
       <void property="processId">
@@ -192,6 +218,32 @@
        <int>1</int>
       </void>
       <void property="processDescription">
+       <string>Novo ponto comercial - DANIEL</string>
+      </void>
+      <void property="processId">
+       <string>Novopontocomercial-DANIEL1</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
+       <string>Novo Ponto Comercial</string>
+      </void>
+      <void property="processId">
+       <string>NovoPontoComercial1</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
        <string>Modelo Treinamento</string>
       </void>
       <void property="processId">
@@ -218,10 +270,62 @@
        <int>1</int>
       </void>
       <void property="processDescription">
+       <string>Proposta de Seguro</string>
+      </void>
+      <void property="processId">
+       <string>PropostadeSeguro1</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
+       <string>Socilitacao_Manutencao</string>
+      </void>
+      <void property="processId">
+       <string>Socilitacao_Manutencao</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
+       <string>MBA</string>
+      </void>
+      <void property="processId">
+       <string>trabalhofinal</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
        <string>Venda de Automóvel - Daniel</string>
       </void>
       <void property="processId">
        <string>VendadeAutomóvel-Daniel</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="com.totvs.tds.ecm.foundation.ws.ProcessDefinitionDto">
+      <void property="companyId">
+       <int>1</int>
+      </void>
+      <void property="processDescription">
+       <string>Venda de Automóvel - Daniel</string>
+      </void>
+      <void property="processId">
+       <string>VendadeAutomóvel-Daniel1</string>
       </void>
      </object>
     </void>

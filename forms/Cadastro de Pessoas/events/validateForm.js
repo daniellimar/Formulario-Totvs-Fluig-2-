@@ -5,7 +5,7 @@ function validateForm(form) {
         field: "setor", message: "Preencha o campo setor."
     }];
 
-    for (let i = 0; i < requiredFields.length; ++i) {
+    for (var i = 0; i < requiredFields.length; ++i) {
         if (valueIsEmpty(form.getValue(requiredFields[i].field))) {
             throw requiredFields[i].message;
         }
